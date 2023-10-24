@@ -3,6 +3,7 @@ import Testimonial from "../Testimonial/Testimonial";
 import Banner from "../banner/Banner";
 import MiniCart from "../contact/miniCart";
 import Expert from "../expert/Expert";
+import Reviews from "../reviews/Reviews";
 import Services from "../services/Services";
 
 
@@ -14,6 +15,7 @@ const Home = () => {
             <div className="max-w-6xl mx-auto">
             <Services></Services>
             <MiniCart></MiniCart>
+            <Reviews></Reviews>
             <Expert></Expert>
             <Testimonial></Testimonial>
             </div>

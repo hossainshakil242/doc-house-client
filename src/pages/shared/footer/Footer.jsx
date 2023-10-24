@@ -1,5 +1,7 @@
 
 const Footer = () => {
+    const date = new Date().getFullYear();
+
     return (
         <div className="mx-2">
             <footer className="footer grid-rows-2 p-10 bg-neutral text-neutral-content">
@@ -45,6 +47,15 @@ const Footer = () => {
                     <a className="link link-hover">Android</a>
                 </nav>
             </footer>
+
+            {/* down  */}
+
+            <footer className="footer footer-center p-4 bg-base-300 text-base-content">
+                <aside>
+                    <p>Copyright © {date} - All right reserved by ACME Industries Ltd</p>
+                </aside>
+            </footer>
+
         </div>
     );
 };
