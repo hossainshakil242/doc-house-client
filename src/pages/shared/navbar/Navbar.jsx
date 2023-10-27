@@ -1,19 +1,20 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from '../../../assets/icons/logo.png';
 
 const Navbar = () => {
+
     const navItems = <>
         <li className="hover:bg-success rounded-sm">
-            <Link to='/'>Home</Link>
+            <NavLink to='/' className={({ isActive, isPending }) => isActive ? "active" : isPending ? "pending" : ""} >Home</NavLink>
         </li>
         <li className="hover:bg-success rounded-sm">
-            <Link to='/'>About</Link>
+            <NavLink to='/about' className={({ isActive, isPending }) => isActive ? "active" : isPending ? "pending" : ""} >About</NavLink>
+        </li>
+        <li className="hover:bg-success rounded-xl">
+            <NavLink to='/appointment' className={({ isActive, isPending }) => isActive ? "active" : isPending ? "pending" : ""}>Appointment</NavLink>
         </li>
         <li className="hover:bg-success rounded-sm">
-            <Link to='/appointment'>Appointment</Link>
-        </li>
-        <li className="hover:bg-success rounded-sm">
-            <Link to='/login'>Login</Link>
+            <NavLink to='/login' className={({ isActive, isPending }) => isActive ? "active" : isPending ? "pending" : ""} >Login</NavLink>
         </li>
     </>
     return (
@@ -40,7 +41,7 @@ const Navbar = () => {
             {/* <div className="navbar-end">
                 <a className="btn">Button</a>
             </div> */}
-            
+
         </div>
     );
 };

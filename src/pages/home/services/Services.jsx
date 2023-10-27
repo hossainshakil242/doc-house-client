@@ -12,7 +12,7 @@ const Services = () => {
             .then(res => res.json())
             .then(data => setData(data))
     }, []);
-    console.log(data);
+    // console.log(data);
     return (
         <div className='max-w-6xl mx-auto flex justify-center gap-5 '>
             <div>
